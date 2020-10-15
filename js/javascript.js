@@ -20,15 +20,21 @@ var utente=prompt('inserisci il tuo indirizzo gmail').toLocaleLowerCase();
 //     console.log('email non corretta')
 //     alert('email non correta riprova')
 // }
+var accountEsistente=false;
+
+
+
 for(var i =0; i<indirizzi.length; i++){
     if(utente==indirizzi[i]){
-        console.log('email corretta')
-        alert('email correta benvenuto/a')
+        accountEsistente=true;
     }
-    else{
-        console.log('email non corretta')
-        alert('email non correta riprova')
-    }
-}
-// esecizio DADI--------------------------
 
+}
+
+if (accountEsistente == true){
+    console.log('email corretta');
+    alert('email correta benvenuto/a');
+}
+else {
+    alert('email non esistente');
+}
