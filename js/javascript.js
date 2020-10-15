@@ -1,6 +1,6 @@
 // eserzio EMAIL---------
 
-var indirizzi=[ 'luca@gmail.it', 'mario@gmail.it', 'giovanni@gmail.it'];
+var indirizzi=[ "luca@gmail.it", "mario@gmail.it", "giovanni@gmail.it"];
 var utente=prompt('inserisci il tuo indirizzo gmail').toLocaleLowerCase();
 
 
